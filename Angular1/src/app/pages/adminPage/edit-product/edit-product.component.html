@@ -1,0 +1,32 @@
+<p>Edit</p>
+<h1>Edit Products</h1>
+<form (ngSubmit)="onHandleUpdate()" [formGroup]="productForm">
+    <div class="mb-3">
+        <input
+            type="text"         
+            formControlName="name"
+            placeholder="Tên"
+            class="form-control"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+            type="number"
+           formControlName="price"
+            placeholder="Giá"
+            class="form-control"
+        />
+    </div>
+    <div class="mb-3">
+        <input
+            type="text"
+            formControlName="img"
+            placeholder="Ảnh"
+            class="form-control"
+        />
+    </div>
+
+    <button type="submit" class="btn btn-primary bg-block btn-lg">
+        Sửa sản phẩm
+    </button>
+</form>

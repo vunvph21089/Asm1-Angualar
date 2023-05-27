@@ -1,0 +1,70 @@
+<div class="all">
+  <div class="header row">
+    <div class="col-lg-6">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ">
+          <a class="navbar-brand fs-3" href="#">Vu.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" routerLink="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="product">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="about">About</a>
+              </li>
+             
+            </ul>
+          </div>        
+        </div>     
+      </nav>
+    </div>
+    <div class="col-lg-6 col d-flex mt-3">
+      <div class="float-xl-5">
+        <a class="btn btn-primary" routerLink="signin" role="button">Đăng nhập</a>     
+      </div>
+      <div class="float-xl-5">
+        <button type="button" routerLink="cart" class="btn btn-primary ">Giỏ hàng</button>
+      </div>
+      
+     
+    </div>
+  </div>
+    
+
+
+<div id="content">
+  <router-outlet/>
+</div>
+   
+
+
+    <!-- Footer -->
+    <!-- <div id="footer">
+      <footer class="text-center text-lg-start bg-light text-muted">
+
+
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+            >MDBootstrap.com</a
+          >
+        </div>
+     
+      </footer>
+    </div> -->
+   
+    <!-- Footer -->
+  
+</div>

@@ -1,0 +1,28 @@
+<h1>Product </h1>
+<div class="container">
+    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
+        <div *ngFor="let product of productList"  class="col" >
+            <div class="card radius-15">
+                <div class="card-body text-center">
+                    <div class="p-4 border radius-15">
+                        <img src="{{product.img}}" width="110" height="110" class="rounded-circle shadow" alt="">
+                        <h5 class="mb-0 mt-5">{{product.name}}</h5>
+                        <p class="mb-3">{{product.img}}</p>
+                        <p class="mb-3">{{product.price}}</p>
+                      
+                        <div class="list-inline contacts-social mt-3 mb-3"> 
+                            <a href="javascript:;" class="list-inline-item bg-facebook text-white border-0"><i class="bx bxl-facebook"></i>Tim</a>
+                            
+                            <a href="javascript:;" class="list-inline-item bg-linkedin text-white border-0" (click)="onAddCart(product)"><i class="bx bxl-linkedin"></i>Cart</a>
+                        </div>
+
+                        <div class="d-grid"> <a href="#" routerLink="{{product.id!}}" class="btn btn-outline-primary radius-15">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+ 
+    </div>
+    </div>

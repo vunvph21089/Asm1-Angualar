@@ -1,0 +1,18 @@
+<h1>Addd</h1>
+<form (ngSubmit)="onHandleSubmit()" [formGroup]="productForm">
+    <div class="mb-3">
+        <input type="text" formControlName="name"  class="form-control" />
+    </div>
+    <div class="mb-3">
+        <input type="text" formControlName="price"  class="form-control"/>
+    </div>
+    <div class="mb-3">
+        <input type="text" formControlName="img"  class="form-control"/>
+    </div>
+  
+    
+
+    <button type="submit" class="btn btn-primary bg-block btn-lg" [disabled]="!productForm.valid">Submit</button>
+
+    <!-- {{ productForm.value | json }} -->
+</form>
